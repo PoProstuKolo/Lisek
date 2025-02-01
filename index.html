@@ -7,19 +7,22 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<div class="img hidden">
+		<audio autoplay onloadeddata="this.volume=0.5"g>
+			<source src="./img/Måneskin - VALENTINE (Lyrics).mp3" />
+		</audio>
+		<div class="img">
 			<img width="128" src="./img/fox.jpg" alt="Lisek" />
 			<span>(To Ty - słodki lisek)</span>
 		</div>
-		<div class="pre-view hidden">
+		<div class="pre-view">
 			<h1 class="question">Lisku mam bardzo ważne pytanie!</h1>
-			<button class="btn">Dalej »</button>
+			<button class="btn" id="next">Dalej »</button>
 		</div>
 		<div class="view hidden">
 			<h1 class="question">Zostaniesz moją walentynką? ❤️</h1>
 			<div class="btns">
-				<button class="btn">Tak 🥰</button>
-				<button class="btn">Nie 😭</button>
+				<button class="btn" id="yes">Tak 🥰</button>
+				<button class="btn" id="no">Nie 😭</button>
 			</div>
 		</div>
 		<div class="view-yes hidden">
@@ -35,7 +38,7 @@
 				MÓJ CUDOWNY LISKU ❤️🥰
 			</h1>
 		</div>
-		<div class="view-no">
+		<div class="view-no hidden">
 			<div class="img">
 				<img width="256" src="./img/sad.gif" alt="Lisek" />
 				<span>(To ja teraz :((( )</span>
@@ -43,12 +46,11 @@
 			<h1 class="question">
 				Dlaczego tak?
 				<br />
-                Moje serduszko 
-                <br />
+				Moje serduszko
+				<br />
 				zostało złamane 😭💔
 			</h1>
 		</div>
-
-        
 	</body>
+	<script src="./js/main.js"></script>
 </html>
